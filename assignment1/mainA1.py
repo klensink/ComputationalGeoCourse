@@ -1,9 +1,20 @@
+# EOSC213 Assignment 1 Exercise 1
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
 plt.ion()
 
 def misfit(a,b):
+    """Computes the distance between a and b. We will use this to compare how close
+    your gradients are to the true gradients.
+    
+    Arguments:
+        a {torch.Tensor}
+        b {torch.Tensor}
+    
+    Returns:
+        [torch.Tensor] -- Mean squared error between a and b
+    """
     n = a.numel()
     return torch.norm(a-b)/n       
 
