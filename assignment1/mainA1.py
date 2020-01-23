@@ -77,7 +77,7 @@ if __name__ == "__main__":
     # y = 
     # topo = 
     
-    # Uncomment these lines to plot the data, you should do this atleast once!
+    # Uncomment these lines to plot the data, you should do this at least once!
     #plt.imshow(topo, extent=[x.min(), x.max(), y.min(), y.max()])
     #plt.show()
     
@@ -91,6 +91,7 @@ if __name__ == "__main__":
     #absGradTtrue = 
     
     # Here we are going to measure the distance between your AbsGrad and the true answer.
+    # Don't change epsilon here.
     epsilon = 0.001
     pss = 0
     if misfit(absGradT,absGradTtrue)<epsilon:
